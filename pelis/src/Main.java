@@ -14,5 +14,18 @@ public class Main {
 
         System.out.println(media);
 
+        // Text bloc a partir de Java 15
+        String sinopsis = """
+                Matrix es una paradoja
+                La mejor película del fin del milenio
+                Fué lanzada en: 
+                """ + fechaDeLanzamiento;
+
+        System.out.println(sinopsis);
+
+        int clasificacion = (int) media /2;
+
+        System.out.println(clasificacion);
+
     }
 }
