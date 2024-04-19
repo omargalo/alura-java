@@ -1,4 +1,6 @@
 import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
+import com.aluracursos.screenmatch.calculos.FiltroRecomendacion;
+import com.aluracursos.screenmatch.modelos.Episodio;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 
@@ -41,6 +43,16 @@ public class Principal {
         calculadoraDeTiempo.incluye(betterCallSaul);
         System.out.println("Tiempo necesario:" + calculadoraDeTiempo.getTiempoTotal());
 
+        FiltroRecomendacion filtroRecomendacion = new FiltroRecomendacion();
+        filtroRecomendacion.filtra(miPelicula1);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setNombre("Bandidos");
+        episodio.setSerie(betterCallSaul);
+        episodio.setTotalVisualizaciones(40);
+
+        filtroRecomendacion.filtra(episodio);
 
     }
 }
