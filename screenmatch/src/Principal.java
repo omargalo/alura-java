@@ -3,9 +3,10 @@ import com.aluracursos.screenmatch.modelos.Pelicula;
 public class Principal {
     public static void main(String[] args) {
         Pelicula miPelicula1 = new Pelicula();
-        miPelicula1.nombre = "The Matrix";
-        miPelicula1.anioDeLanzamiento = 1999;
-        miPelicula1.duracionEnMinutos = 120;
+        miPelicula1.setNombre("The Matrix");
+        miPelicula1.setAnioDeLanzamiento(1999);
+        miPelicula1.setDuracionEnMinutos(120);
+        miPelicula1.setIncluidaEnPlan(true);
 
         miPelicula1.muestraFichaTecnica();
         miPelicula1.evalua(9.2);
