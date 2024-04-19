@@ -1,4 +1,5 @@
 import com.aluracursos.screenmatch.modelos.Pelicula;
+import com.aluracursos.screenmatch.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -15,6 +16,16 @@ public class Principal {
 
         System.out.println(miPelicula1.getTotalEvaluaciones());
         System.out.println(miPelicula1.calculaMedia());
+
+        Serie betterCallSaul = new Serie();
+        betterCallSaul.setNombre("Better Call Saul");
+        betterCallSaul.setAnioDeLanzamiento(2021);
+        betterCallSaul.setTemporadas(6);
+        betterCallSaul.setMinutosPorEpisodio(40);
+        betterCallSaul.setEpisodiosPorTemporada(20);
+        betterCallSaul.muestraFichaTecnica();
+
+        System.out.println(betterCallSaul.getDuracionEnMinutos());
 
     }
 }
