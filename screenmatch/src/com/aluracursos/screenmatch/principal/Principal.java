@@ -1,3 +1,5 @@
+package com.aluracursos.screenmatch.principal;
+
 import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
 import com.aluracursos.screenmatch.calculos.FiltroRecomendacion;
 import com.aluracursos.screenmatch.modelos.Episodio;
@@ -9,15 +11,11 @@ import java.util.ArrayList;
 public class Principal {
     public static void main(String[] args) {
 
-        Pelicula miPelicula1 = new Pelicula();
-        miPelicula1.setNombre("The Matrix");
-        miPelicula1.setAnioDeLanzamiento(1999);
+        Pelicula miPelicula1 = new Pelicula("The Matrix", 1999);
         miPelicula1.setDuracionEnMinutos(120);
         miPelicula1.setIncluidaEnPlan(true);
 
-        Pelicula miPelicula2 = new Pelicula();
-        miPelicula2.setNombre("Interestellar");
-        miPelicula2.setAnioDeLanzamiento(2017);
+        Pelicula miPelicula2 = new Pelicula("Interestellar", 2017);
         miPelicula2.setDuracionEnMinutos(140);
         miPelicula2.setIncluidaEnPlan(true);
 
@@ -29,9 +27,7 @@ public class Principal {
         System.out.println(miPelicula1.getTotalEvaluaciones());
         System.out.println(miPelicula1.calculaMedia());
 
-        Serie betterCallSaul = new Serie();
-        betterCallSaul.setNombre("Better Call Saul");
-        betterCallSaul.setAnioDeLanzamiento(2021);
+        Serie betterCallSaul = new Serie("Better Call Saul", 2021);
         betterCallSaul.setTemporadas(6);
         betterCallSaul.setMinutosPorEpisodio(40);
         betterCallSaul.setEpisodiosPorTemporada(20);
@@ -58,9 +54,7 @@ public class Principal {
 
         // ArrayList
 
-        var miPelicula3 = new Pelicula();
-        miPelicula3.setNombre("Lord of the Rings");
-        miPelicula3.setAnioDeLanzamiento(2001);
+        var miPelicula3 = new Pelicula("lord of the Rings", 2001);
         miPelicula3.setDuracionEnMinutos(180);
 
         ArrayList<Pelicula> listaPeliculas = new ArrayList<>();
