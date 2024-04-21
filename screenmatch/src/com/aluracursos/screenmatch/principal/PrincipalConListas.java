@@ -6,6 +6,8 @@ import com.aluracursos.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class PrincipalConListas {
     public static void main(String[] args) {
@@ -18,7 +20,7 @@ public class PrincipalConListas {
         Serie betterCallSaul = new Serie("Better Call Saul", 2021);
 
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+        List<Titulo> lista = new ArrayList<>();
         lista.add(miPelicula1);
         lista.add(miPelicula2);
         lista.add(miPelicula3);
@@ -45,6 +47,9 @@ public class PrincipalConListas {
 
         Collections.sort(lista);
         System.out.println("Pelicuals ordenadas: " + lista);
+
+        lista.sort(Comparator.comparing(Titulo::getAnioDeLanzamiento));
+        System.out.println("Lista ordenada por fecha: " + lista);
 
 
     }
