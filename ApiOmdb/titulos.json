@@ -1,0 +1,26 @@
+[
+  {
+    "Nombre": "Matrix",
+    "AnioDeLanzamiento": 1993,
+    "DuracionEnMinutos": 60,
+    "IncluidaEnPlan": false,
+    "SumaDeEvaluaciones": 0.0,
+    "TotalEvaluaciones": 0
+  },
+  {
+    "Nombre": "Frozen",
+    "AnioDeLanzamiento": 2013,
+    "DuracionEnMinutos": 102,
+    "IncluidaEnPlan": false,
+    "SumaDeEvaluaciones": 0.0,
+    "TotalEvaluaciones": 0
+  },
+  {
+    "Nombre": "Encanto",
+    "AnioDeLanzamiento": 2021,
+    "DuracionEnMinutos": 102,
+    "IncluidaEnPlan": false,
+    "SumaDeEvaluaciones": 0.0,
+    "TotalEvaluaciones": 0
+  }
+]
