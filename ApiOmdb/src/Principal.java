@@ -32,8 +32,14 @@ public class Principal {
         //Titulo miTitulo = gson.fromJson(json, Titulo.class);
         TituloOmdb miTituloOmdb = gson.fromJson(json, TituloOmdb.class);
         System.out.println(miTituloOmdb);
-        Titulo miTitulo = new Titulo(miTituloOmdb);
-        System.out.println(miTitulo);
+        try {
+            Titulo miTitulo = new Titulo(miTituloOmdb);
+            System.out.println(miTitulo);
+        }catch (NumberFormatException e) {
+            System.out.println("Ocurrio un error: ");
+            System.out.println(e.getMessage());
+        }
+        System.out.println("Finalizo la ejecución del programa");
 
     }
 }
