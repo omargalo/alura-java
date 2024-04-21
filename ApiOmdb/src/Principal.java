@@ -14,7 +14,9 @@ public class Principal {
         System.out.println("Escribe el nombre de la pelicula: ");
         var busqueda = lectura.nextLine();
 
-        String direccion = "http://www.omdbapi.com/?t=" + busqueda + "&apikey=efd2e961";
+        String direccion = "http://www.omdbapi.com/?t="+
+                busqueda.replace(" ", "+")+
+                "&apikey=efd2e961";
 
         try {
             HttpClient client = HttpClient.newHttpClient();
@@ -41,8 +43,8 @@ public class Principal {
             System.out.println(e.getMessage());
         }catch (IllegalArgumentException e){
             System.out.println("Error en la URI, verifica la dirección.");
-        }catch (Exception e){
-            System.out.println("Ocurrio un error inesperado.");
+        }catch (ErrorEnDuracionException e){
+            System.out.println(e.getMessage());
         }
 
         System.out.println("Finalizo la ejecución del programa");
